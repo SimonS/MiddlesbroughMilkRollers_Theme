@@ -14,7 +14,7 @@
     <div id="main">
         <a href="/" id="logo">Middlesbrough Milk Rollers</a>
         <div class="bnr">
-            banner
+            <?php wp_nav_menu(); ?>
         </div>
         <div class="left-column">
             left col
