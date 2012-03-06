@@ -1,0 +1,195 @@
+/*
+ * Theme Name: MMR Theme
+ * Author: Simon Scarfe
+ * Author URL: http://breakfastdinnertea.co.uk
+ */
+
+/* RESET */
+html,body,div,span,applet,object,iframe, h1,h2,h3,h4,h5,h6,p,blockquote,pre, a,abbr,acronym,address,big,cite,code, del,dfn,em,img,ins,kbd,q,s,samp, small,strike,strong,sub,sup,tt,var, b,u,i,center, dl,dt,dd,ol,ul,li, fieldset,form,label,legend, table,caption,tbody,tfoot,thead,tr,th,td, article,aside,canvas,details,figcaption,figure, footer,header,hgroup,menu,nav,section,summary, time,mark,audio,video { 
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{
+  display:block;
+}
+body{
+  line-height:1;
+}
+ol,ul{
+  list-style:none;
+}
+blockquote,q{
+  quotes:none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after{
+  content:'';
+  content:none;
+}
+/* remember to define visible focus styles!
+:focus{
+  outline:?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins{
+  text-decoration:none;
+}
+del{
+  text-decoration:line-through;
+}
+
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* WORDPRESS CLASSES */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter, div.aligncenter {
+    display:block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float:left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float:left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin:0;
+    max-width: 98.5%;
+    padding:0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size:11px;
+    line-height:17px;
+    margin:0;
+    padding:0 4px 5px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #a9d4cd url(images/bg-grad.png) repeat-x bottom;
+    height: 100%;
+}
+
+div#main {
+    height: 100%;
+    margin: 36px auto;
+    overflow: hidden;
+    position: relative;
+    width: 1014px;
+}
+
+div.left-column {
+    float: left;
+    width: 240px;
+}
+
+div.main-column {
+    background: transparent url(images/content-bg.png) no-repeat bottom;
+    float: left;
+    margin-left: 34px;
+    margin-top: 120px;
+    padding: 40px;
+    padding-bottom: 50px;
+    width: 654px;
+}
+
+div.bnr {
+    background: transparent url(images/banner.png) no-repeat;
+    height: 104px;
+    position: absolute;
+    right: 0;
+    top: 55px;
+    width: 665px;
+}
+
+a#logo {
+    background: transparent url(images/logo.png) no-repeat;
+    height: 214px;
+    left: 241px;
+    position: absolute;
+    text-indent: -31337px;
+    top: 0;
+    width: 230px;
+    z-index: 100000;
+}
+
+div.birds {
+    background: transparent url(images/birds.png) no-repeat;
+    bottom: 25px;
+    height: 602px;
+    position: fixed;
+    right: 40px;
+    width: 181px;
+}
