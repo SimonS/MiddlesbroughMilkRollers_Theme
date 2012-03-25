@@ -7,6 +7,7 @@
     <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></head>
     <![endif]-->
+    <?php wp_enqueue_script( 'jquery' ); ?>
     <?php wp_head(); ?>
 </head>
 
@@ -15,6 +16,21 @@
         <a href="/" id="logo">Middlesbrough Milk Rollers</a>
         <div class="bnr">
             <?php wp_nav_menu(); ?>
+            <script>
+( function( $ ){
+
+    $( function() {
+         
+        $( 'div.menu-main-menu-container li' ).hover( function(){
+            $( 'ul', this ).slideDown();
+        }, function(){
+        
+            $( 'ul', this ).slideDown();
+        });
+    } );
+
+} )( jQuery );
+            </script>
         </div>
         <div class="left-column">
             <?php get_sidebar(); ?>

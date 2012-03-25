@@ -213,32 +213,64 @@ div.bnr {
     width: 665px;
 }
 
-div.bnr div.menu {
+div.bnr div.menu-main-menu-container {
     float: right;
     margin-right: 40px;
     margin-top:40px;
 }
 
-div.bnr div.menu li {
+div.bnr div.menu-main-menu-container li {
     float: left;
     margin-left: 20px;
 }
 
-div.bnr div.menu a {
-    color: #333;
+div.bnr div.menu-main-menu-container a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
     text-decoration: none;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+div.bnr div.menu-main-menu-container li ul {
+    display: none;
 }
 
 /* SIDEBAR */
+div.left-column .widget {
+    background: transparent url(images/widget-bg.png) no-repeat center bottom;
+    margin-top: -30px;
+    padding: 30px 45px;
+    position: relative;
+    z-index: 1;
+}
 
 div.left-column h2 {
-    background: transparent url(images/widget-header.png) no-repeat center;
+    background: transparent url(images/widget-header.png) no-repeat center top;
     color: #3c3c3c;
     font: 22px 'Lobster';
     height: 49px;
     margin: 0;
     padding-top: 27px;
+    position: relative;
     text-align: center;
+    z-index: 1000;
+}
+
+div.left-column .widget li a {
+    color: #3c3c3c;
+    font: bold 12px arial,sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+div.left-column .widget li a:hover {
+    text-decoration: underline;
 }
 
 a#logo {
