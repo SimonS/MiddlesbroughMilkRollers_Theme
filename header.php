@@ -17,6 +17,6 @@
             <?php wp_nav_menu(); ?>
         </div>
         <div class="left-column">
-            left col
+            <?php get_sidebar(); ?>
         </div>
         <div class="main-column">
