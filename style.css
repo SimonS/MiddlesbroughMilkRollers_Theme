@@ -225,16 +225,11 @@ div.bnr div.menu-main-menu-container li {
 }
 
 div.bnr div.menu-main-menu-container a {
-    color: #fff;
+    color: #3c3c3c;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 1px;
     text-decoration: none;
-    text-shadow:
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
 }
 
 div.bnr div.menu-main-menu-container li ul {
