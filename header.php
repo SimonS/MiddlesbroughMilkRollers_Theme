@@ -20,13 +20,61 @@
 ( function( $ ){
 
     $( function() {
-         
+        var slide_timeout;
+
+        var timeout = 500;
+
         $( 'div.menu-main-menu-container li' ).hover( function(){
-            $( 'ul', this ).slideDown();
+            var $this = $(this),
+                same_el = false,
+                $slide_el;
+
+            // clear other submenus
+            $( 'div.menu-main-menu-container li' ).each(function(){
+                if($(this) != $this && $(this).data( 'child-clone' ) ) {
+                    $(this).data( 'child-clone' ).slideUp();
+                    if(slide_timeout) {
+                        clearTimeout(slide_timeout);
+                    }
+                }
+            });
+
+            if( !$this.data( 'child-clone' ) ) {
+                $this.data( 'child-clone', $( 'ul', this).clone().offset($this.offset()).appendTo($('body')));
+            }
+            $slide_el = $this.data( 'child-clone' );
+
+            if(slide_timeout) {
+                clearTimeout(slide_timeout);
+            } 
+
+            if($slide_el.not(':visible')){
+                $slide_el.slideDown();
+            }
+
+            $slide_el.hover(function(){
+                clearTimeout(slide_timeout);
+            }, function(){
+                var $this = $(this); 
+
+                slide_timeout = setTimeout(function() {
+                    $this.slideUp();
+                    slide_timeout = false;
+                }, timeout);
+            
+            });
+
         }, function(){
-        
-            $( 'ul', this ).slideDown();
+            var $slide_el,
+                $this = $(this);
+
+            slide_timeout = setTimeout(function() {
+                $slide_el = $this.data( 'child-clone' );
+                $slide_el.slideUp();
+                slide_timeout = false;
+            }, timeout);
         });
+
     } );
 
 } )( jQuery );

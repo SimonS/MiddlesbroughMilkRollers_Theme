@@ -211,6 +211,7 @@ div.bnr {
     right: 0;
     top: 80px;
     width: 665px;
+    z-index: 60;
 }
 
 div.bnr div.menu-main-menu-container {
@@ -222,6 +223,7 @@ div.bnr div.menu-main-menu-container {
 div.bnr div.menu-main-menu-container li {
     float: left;
     margin-left: 20px;
+    z-index: 100;
 }
 
 div.bnr div.menu-main-menu-container a {
@@ -232,8 +234,29 @@ div.bnr div.menu-main-menu-container a {
     text-decoration: none;
 }
 
-div.bnr div.menu-main-menu-container li ul {
+div.bnr div.menu-main-menu-container li ul, ul.sub-menu {
+    background: #feabd5;
     display: none;
+    padding: 60px 10px 5px;
+    position: absolute;
+    z-index: 50;
+}
+
+div.bnr div.menu-main-menu-container li ul li {
+    float: none;
+}
+
+ul.sub-menu {
+    border: 1px #3c3c3c solid;
+}
+
+ul.sub-menu li {
+    margin-bottom: 10px;
+}
+
+ul.sub-menu li a {
+    color: #3c3c3c;
+    text-decoration: none;
 }
 
 /* SIDEBAR */
@@ -286,6 +309,7 @@ div.birds {
     position: fixed;
     right: 40px;
     width: 181px;
+    z-index: -1;
 }
 
 p#breadcrumbs {
