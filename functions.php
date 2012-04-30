@@ -9,3 +9,6 @@ register_sidebar(array(
 ));
 
 register_nav_menu('main', 'Main navigation menu');
+
+add_theme_support('post-thumbnails');
+add_image_size( 'carousel', 640, 274, true ); //

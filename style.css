@@ -198,9 +198,8 @@ div.main-column {
     float: left;
     margin-left: 5px;
     margin-top: 145px;
-    padding: 40px;
-    padding-bottom: 50px;
-    width: 654px;
+    padding: 40px 45px 50px 45px;
+    width: 644px;
 }
 
 /* BANNER */
@@ -244,6 +243,51 @@ div.bnr div.menu-main-menu-container li ul, ul.sub-menu {
 
 div.bnr div.menu-main-menu-container li ul li {
     float: none;
+}
+
+div.carousel {
+    border: #3c3c3c 2px solid;
+    height: 274px;
+    margin-bottom: 40px;
+    position: relative;
+    width: 640px;
+}
+
+div.orbit-wrapper {
+    margin-bottom: 40px;
+}
+
+div.carousel div.feature {
+    height: 274px;
+    width: 640px;
+}
+
+div.carousel img {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.main-column div.slider-nav span.right {
+    right: -4px;
+}
+
+div.carousel h2 {
+    background: #3c3c3c;
+    background: rgba(30, 30, 30, 0.85);
+    bottom: 40px;
+    left: 0;
+    margin:0;
+    padding: 5px;
+    position: absolute;
+}
+
+div.carousel h2 a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 ul.sub-menu {

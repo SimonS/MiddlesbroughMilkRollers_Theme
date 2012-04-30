@@ -4,10 +4,16 @@
     <meta charset="utf-8" />
     <title><?php wp_title(); ?></title>
     <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_directory' ); ?>/js/orbit-1.2.3/orbit-1.2.3.css" />
     <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></head>
     <![endif]-->
     <?php wp_enqueue_script( 'jquery' ); ?>
+    <?php wp_enqueue_script( 
+        'orbit', 
+        get_template_directory_uri() . '/js/orbit-1.2.3/jquery.orbit-1.2.3.min.js', 
+        array( 'jquery' ) 
+    ); ?>
     <?php wp_head(); ?>
 </head>
 
