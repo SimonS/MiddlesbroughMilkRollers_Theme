@@ -194,12 +194,12 @@ h1 a, h2 a {
 
 h2 {
     font-family: 'Lobster';
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -268,6 +268,21 @@ div.main-column {
     margin-top: 145px;
     padding: 50px 45px 50px 45px;
     width: 644px;
+}
+
+/* BLOG */
+.list div.post {
+    border-top: #69D3C2 1px dashed;
+    padding-top: 30px;
+}
+
+.list span.date {
+    color: #666;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 10px;
 }
 
 /* BANNER */
@@ -391,6 +406,10 @@ div.left-column h2 {
     position: relative;
     text-align: center;
     z-index: 1000;
+}
+
+div.left-column .widget li {
+    margin-bottom: 10px;
 }
 
 div.left-column .widget li a {
