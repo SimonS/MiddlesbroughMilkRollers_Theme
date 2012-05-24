@@ -16,10 +16,21 @@
             } );
         } )( jQuery );
     </script>
-<?php while ( have_posts() ) : the_post(); ?>
 
-    <?php the_content(); ?>
+    <div class="front-content">
+    <?php while ( have_posts() ) : the_post(); ?>
 
-<?php endwhile; ?>
+        <?php the_content(); ?>
+
+    <?php endwhile; ?>
+    </div>
+
+    <div class="left-col">
+        <h2>What We’re About..</h2>
+    </div>
+
+    <div class="right-col">
+        <h2>Like Us...</h2>
+    </div>
 
 <?php get_footer(); ?>
