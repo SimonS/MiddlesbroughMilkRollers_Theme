@@ -158,8 +158,26 @@ body {
 
 /* Typography */
 p {
-    line-height: 1.4;
-    margin-bottom: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+a {
+    color: #d62797;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+code {
+    font-family: monospace;
 }
 
 h1 {
@@ -168,6 +186,12 @@ h1 {
     font-size: 34px;
     margin-bottom: 20px;
 }
+
+h1 a, h2 a {
+    color: #333;
+    font-weight: normal;
+}
+
 h2 {
     font-family: 'Lobster';
     font-size: 28px;
@@ -175,6 +199,8 @@ h2 {
 }
 
 h3 {
+    font-size: 20px;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 h4 {
@@ -182,6 +208,43 @@ h4 {
 }
 h5 {
     margin-bottom: 20px;
+}
+
+.main-column ul, .main-column ol {
+    margin:0 0 20px 20px;
+}
+.main-column ul {
+    list-style-type:disc;
+}
+.main-column ol {
+    list-style-type:decimal;
+}
+.main-column ol ol {
+    list-style: upper-alpha;
+}
+.main-column ol ol ol {
+    list-style: lower-roman;
+}
+.main-column ol ol ol ol {
+    list-style: lower-alpha;
+}
+
+.main-column ol li,
+.main-column ul li {
+    margin-bottom: 10px;
+}
+
+blockquote {
+    background: #def7f2;
+    float: right;
+    font-size: 16px;
+    padding: 10px;
+    text-align: right;
+    width: 200px;
+}
+
+blockquote p {
+    margin: 0;
 }
 
 div#main {
@@ -194,7 +257,7 @@ div#main {
 
 div.left-column {
     float: left;
-    margin-top:190px;
+    margin-top:200px;
     width: 269px;
 }
 
@@ -203,7 +266,7 @@ div.main-column {
     float: left;
     margin-left: 5px;
     margin-top: 145px;
-    padding: 40px 45px 50px 45px;
+    padding: 50px 45px 50px 45px;
     width: 644px;
 }
 
@@ -365,6 +428,7 @@ div.birds {
 p#breadcrumbs {
     clear: both;
     float: right;
+    margin-bottom: 10px;
 }
 
 div.post {
