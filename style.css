@@ -448,6 +448,7 @@ p#breadcrumbs {
     clear: both;
     float: right;
     margin-bottom: 10px;
+    width: 505px;
 }
 
 div.post {
