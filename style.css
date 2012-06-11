@@ -199,8 +199,9 @@ h2 {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
+    line-height: 1.5;
     margin-bottom: 20px;
 }
 h4 {
@@ -471,3 +472,18 @@ div.right-col h2 {
     font-family: 'Lobster';
     font-size: 28px;
 }
+
+div.featured {
+    border-top: #69D3C2 1px dashed;
+    padding-top:20px;
+}
+
+div.featured h3 {
+    font-family: 'Lobster';
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+div.featured h3 a {
+}
+

@@ -25,12 +25,13 @@
     <?php endwhile; ?>
     </div>
 
-    <div class="left-col">
-        <h2>What We’re About..</h2>
+    <div class="featured">
+        <?php $featured = new WP_Query( 'category_name=featured&posts_per_page=1' );
+        while ( $featured->have_posts() ): $featured->the_post(); $more = 0; ?>
+            <div class="feature">
+                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                <?php the_content(); ?>
+            </div>
+        <?php endwhile; ?>
     </div>
-
-    <div class="right-col">
-        <h2>Like Us...</h2>
-    </div>
-
 <?php get_footer(); ?>
