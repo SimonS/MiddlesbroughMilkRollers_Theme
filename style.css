@@ -429,14 +429,23 @@ div.left-column .widget span.entry-content {
 
 div.left-column .widget span.entry-content a {
     color: #d62797;
+    font-size: 14px;
+    font-weight: normal;
     text-transform: none;
 }
 
 div.left-column .widget span.entry-meta {
     border-top: #69D3C2 1px dashed;
     display: block;
+    font-size: 12px;
     margin-top: 5px;
-    padding-top: 3px;
+    padding-top: 5px;
+}
+div.left-column .widget span.entry-meta a {
+    color: #d62797;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: none;
 }
 
 a#logo {
