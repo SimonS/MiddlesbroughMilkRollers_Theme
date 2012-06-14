@@ -157,7 +157,7 @@ body {
 }
 
 /* Typography */
-p {
+p, .ecxtlTxFe {
     line-height: 1.5;
     margin-bottom: 30px;
 }
@@ -266,6 +266,7 @@ div.main-column {
     float: left;
     margin-left: 5px;
     margin-top: 145px;
+    min-height: 740px;
     padding: 50px 45px 50px 45px;
     width: 644px;
 }
@@ -517,12 +518,12 @@ a#logo {
 }
 
 div.birds {
-    background: transparent url(images/birds.png) no-repeat;
+    background: transparent url(images/swallows.png) no-repeat;
     bottom: 25px;
     height: 602px;
     position: fixed;
-    right: 40px;
-    width: 181px;
+    right: 10px;
+    width: 198px;
     z-index: -1;
 }
 
