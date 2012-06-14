@@ -270,6 +270,58 @@ div.main-column {
     width: 644px;
 }
 
+
+/* FOOTER */
+
+div.footer {
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 32px;
+    width: 681px;
+}
+
+div.footer .icons {
+    height: 42px;
+    overflow: hidden;
+}
+
+div.footer .icons a {
+    background: transparent url(images/tft.png) no-repeat;
+    float: left;
+    height: 42px;
+    margin-right: 9px;
+    opacity: 0.5;
+    text-indent: -31337px;
+    width: 135px;
+}
+div.footer .icons a:hover {
+    opacity: 1;
+}
+
+div.footer .icons a.wicked {
+    background-image: url(images/wicked.png);
+    width: 125px;
+}
+
+div.footer .icons a.popcorn {
+    background-image: url(images/popcorn.png);
+    width: 145px;
+}
+
+div.footer .icons a.rollergirl {
+    background-image: url(images/rollergirl.png);
+    width: 126px;
+}
+
+div.footer .icons a.greendragon {
+    background-image: url(images/greendragon.png);
+    margin-right: 0;
+    width: 112px;
+}
+
+div.footer .icons a.wicked {
+}
+
 /* BLOG */
 .list div.team_member, .list div.post {
     border-top: #69D3C2 1px dashed;
@@ -388,6 +440,11 @@ ul.sub-menu li a {
 }
 
 /* SIDEBAR */
+div.left-column {
+    background: transparent url(images/icons-widget.png) no-repeat center bottom;
+    padding-bottom: 190px;
+}
+
 div.left-column .widget {
     background: transparent url(images/widget-bg.png) no-repeat center bottom;
     margin-top: -30px;
