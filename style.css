@@ -490,7 +490,12 @@ div.featured h3 a {
 
 /* TEAM INDEX */
 
-.list .team_member {
+div.team-archive {
+    border-top: #69D3C2 1px dashed;
+}
+
+div.list div.team_member {
+    border-top: 0;
     float: left;
     margin-right: 22px;
     width: 200px;
@@ -513,6 +518,7 @@ div.featured h3 a {
 
 /* TEAM SINGLE */
 .single-team_member .list .team_member {
+    border-top: #69D3C2 1px dashed;
     float: none;
     margin-right: 0;
     width: auto;
@@ -528,3 +534,14 @@ div.featured h3 a {
     display: inline; 
     margin-bottom: 0;
 }
+
+.single-team_member .profile-pic {
+    border: #69D3C2 1px dashed;
+    float: right;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.single-team_member .profile-pic img {
+    display: block;
+}
+

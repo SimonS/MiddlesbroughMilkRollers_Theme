@@ -6,26 +6,16 @@
 
 <h1>Team Members</h1>
 <div class="list">
-    <?php while ( have_posts() ) : the_post(); ?>
+    <div class="team-archive">
+        <?php while ( have_posts() ) : the_post(); ?>
 
-    <div <?php post_class(); ?>>
-        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'portrait' ); ?></a>
-        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3> 
-        
-        <?php the_content(); ?>
-    </div><div <?php post_class(); ?>>
-        <?php the_post_thumbnail( 'portrait' ); ?>
-        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2> 
-        
-        <?php the_content(); ?>
-    </div><div <?php post_class(); ?>>
-        <?php the_post_thumbnail( 'portrait' ); ?>
-        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2> 
-        
-        <?php the_content(); ?>
+        <div <?php post_class(); ?>>
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'portrait' ); ?></a>
+            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3> 
+        </div>
+
+        <?php endwhile; ?>
     </div>
-
-    <?php endwhile; ?>
 </div> <!-- /.list -->
 
 
