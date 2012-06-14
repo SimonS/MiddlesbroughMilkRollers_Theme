@@ -423,6 +423,22 @@ div.left-column .widget li a:hover {
     text-decoration: underline;
 }
 
+div.left-column .widget span.entry-content {
+    line-height: 1.4;
+}
+
+div.left-column .widget span.entry-content a {
+    color: #d62797;
+    text-transform: none;
+}
+
+div.left-column .widget span.entry-meta {
+    border-top: #69D3C2 1px dashed;
+    display: block;
+    margin-top: 5px;
+    padding-top: 3px;
+}
+
 a#logo {
     background: transparent url(images/logo.png) no-repeat;
     height: 214px;
