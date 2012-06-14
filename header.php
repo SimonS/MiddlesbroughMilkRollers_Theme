@@ -25,6 +25,7 @@
             <script>
 ( function( $ ){
 
+    // Menu code
     $( function() {
         var slide_timeout;
 
@@ -80,6 +81,10 @@
                 slide_timeout = false;
             }, timeout);
         });
+
+        var third_team_members = $( '.list .team_member:nth-child(3n)' );
+        third_team_members.addClass( 'third' );
+        $('<div/>').css({ 'width': '100%', 'clear': 'both', 'height': '10px', 'border': '0' }).insertAfter( third_team_members );
 
     } );
 
