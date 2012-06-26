@@ -570,12 +570,12 @@ div.team-archive {
 div.list div.team_member {
     border-top: 0;
     float: left;
-    margin-right: 22px;
-    width: 200px;
+    margin-right: 14px;
+    width: 150px;
 }
 
-.list .third {
-    margin-right: 0;
+div.list div.fourth {
+    margin-right: 0!important;
 }
 
 .list .team_member h3 {

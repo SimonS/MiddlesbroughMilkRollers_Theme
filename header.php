@@ -82,8 +82,8 @@
             }, timeout);
         });
 
-        var third_team_members = $( '.list .team_member:nth-child(3n)' );
-        third_team_members.addClass( 'third' );
+        var third_team_members = $( '.list .team_member:nth-child(4n)' );
+        third_team_members.addClass( 'fourth' );
         $('<div/>').css({ 'width': '100%', 'clear': 'both', 'height': '10px', 'border': '0' }).insertAfter( third_team_members );
 
     } );
