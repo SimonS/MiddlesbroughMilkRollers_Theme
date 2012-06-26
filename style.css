@@ -517,15 +517,6 @@ a#logo {
     z-index: 100000;
 }
 
-div.birds {
-    background: transparent url(images/swallows.png) no-repeat;
-    bottom: 25px;
-    height: 602px;
-    position: fixed;
-    right: 10px;
-    width: 198px;
-    z-index: -1;
-}
 
 p#breadcrumbs {
     clear: both;
@@ -628,3 +619,17 @@ div.list div.team_member {
     display: block;
 }
 
+
+/* RESPONSIVENESS */
+
+@media screen and (min-width: 1250px) {
+    div.birds {
+        background: transparent url(images/swallows.png) no-repeat;
+        bottom: 25px;
+        height: 602px;
+        position: fixed;
+        right: 10px;
+        width: 198px;
+        z-index: -1;
+    }
+}
