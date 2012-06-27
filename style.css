@@ -357,7 +357,7 @@ div.bnr div.menu-main-menu-container {
 div.bnr div.menu-main-menu-container li {
     float: left;
     margin-left: 20px;
-    z-index: 100;
+    z-index: 85;
 }
 
 div.bnr div.menu-main-menu-container a {
@@ -461,7 +461,7 @@ div.left-column h2 {
     padding-top: 27px;
     position: relative;
     text-align: center;
-    z-index: 1000;
+    z-index: 90;
 }
 
 div.left-column .widget li {
@@ -512,7 +512,7 @@ a#logo {
     text-indent: -31337px;
     top: 0;
     width: 230px;
-    z-index: 100000;
+    z-index: 90;
 }
 
 
