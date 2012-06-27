@@ -337,6 +337,12 @@ div.footer .icons a.wicked {
     padding-left: 10px;
 }
 
+div.navigation {
+    border-top: #69D3C2 1px dashed;
+    padding-top: 40px;
+    text-align: center;
+}
+
 /* BANNER */
 div.bnr {
     background: transparent url(images/banner.png) no-repeat;
@@ -620,7 +626,7 @@ div.list div.fourth {
 
 /* RESPONSIVENESS */
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1200px) {
     div.birds {
         background: transparent url(images/swallows.png) no-repeat;
         bottom: 25px;

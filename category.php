@@ -4,7 +4,7 @@
 	yoast_breadcrumb('<p id="breadcrumbs">','</p>');
 } ?>
 
-<h1>News</h1>
+<h1><?php single_cat_title(); ?></h1>
 <div class="list">
     <?php while ( have_posts() ) : the_post(); ?>
 
@@ -15,9 +15,10 @@
     </div>
 
     <?php endwhile; ?>
-
     <?php if(function_exists('wp_paginate')):
             wp_paginate();
     endif; ?>
+</div> <!-- /.list -->
+
 
 <?php get_footer(); ?>
