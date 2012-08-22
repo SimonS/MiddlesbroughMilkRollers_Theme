@@ -378,7 +378,7 @@ div.bnr div.menu-main-menu-container li ul, ul.sub-menu {
     background: #feabd5;
     display: none;
     padding: 60px 10px 5px;
-    position: absolute;
+    position: absolute!important;
     z-index: 50;
 }
 

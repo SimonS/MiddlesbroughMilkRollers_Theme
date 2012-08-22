@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
     <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_directory' ); ?>/js/orbit-1.2.3/orbit-1.2.3.css" />
     <!--[if IE]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></head>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <?php wp_enqueue_script( 'jquery' ); ?>
     <?php wp_enqueue_script( 
